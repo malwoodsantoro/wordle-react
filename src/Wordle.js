@@ -31,9 +31,9 @@ const Wordle = () => {
       {enteredGuesses.map((guess) => {
         return (
           <div className="word">
-            {guess.split('').map((letter) => {
+            {guess.split('').map((letter, index) => {
               return (
-                <div className="letter" style={{backgroundColor: word.includes(letter) ? 'cornsilk' : 'pink'}}>{letter}</div>
+                <div className="letter" style={{backgroundColor: word.charAt(index) === letter ? 'green' : word.includes(letter) ? 'yellow' : 'gray'}}>{letter}</div>
               )
             })}
           </div>
