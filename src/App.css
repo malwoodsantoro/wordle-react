@@ -37,10 +37,21 @@
   }
 }
 
+.wordle {
+  margin-top: 50px;
+}
+
+input {
+  border: 2px solid lightgreen;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 5px;
+}
+
 .letter {
   outline: solid black;
   display: flex;
-  padding: 10px;
+  padding: 20px;
 }
 
 .word {
@@ -48,4 +59,8 @@
   flex-direction: row;
   justify-content: center;
   padding: 10px;
+}
+
+.guessesLeft {
+  font-size: 20px;
 }
